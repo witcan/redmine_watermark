@@ -1,0 +1,6 @@
+# English strings go here for Rails i18n
+en:
+  watermark_enable: "Enable watermark"
+  watermark_enable_timestamp: "Enable current date"
+  watermark_enable_username: "Enable current username"
+  watermark_custom_text: "Custom text"

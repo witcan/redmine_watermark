@@ -1,0 +1,19 @@
+<p>
+  <label for="settings_watermark_enable"><%= l(:watermark_enable) %></label>
+  <input type="checkbox" name="settings[watermark_enable]" id="settings_watermark_enable" <%= Setting.plugin_redmine_watermark['watermark_enable'] == 'on' ? 'checked' : nil %>>
+</p>
+
+<p>
+  <label for="settings_watermark_enable_username"><%= l(:watermark_enable_username) %></label>
+  <input type="checkbox" name="settings[watermark_enable_username]" id="settings_watermark_enable_username" <%= Setting.plugin_redmine_watermark['watermark_enable_username'] == 'on' ? 'checked' : nil %>>
+</p>
+
+<p>
+  <label for="settings_watermark_enable_timestamp"><%= l(:watermark_enable_timestamp) %></label>
+  <input type="checkbox" name="settings[watermark_enable_timestamp]" id="settings_watermark_enable_timestamp" <%= Setting.plugin_redmine_watermark['watermark_enable_timestamp'] == 'on' ? 'checked' : nil %>>
+</p>
+
+<p>
+  <label for="settings_watermark_custom_text"><%= l(:watermark_custom_text) %></label>
+  <input type="text" name="settings[watermark_custom_text]" id="settings_watermark_custom_text" value="<%= Setting.plugin_redmine_watermark['watermark_custom_text'] %>" size="80">
+</p>

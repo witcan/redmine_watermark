@@ -1,0 +1,6 @@
+# English strings go here for Rails i18n
+zh-TW:
+  watermark_enable: 啟用水印
+  watermark_enable_timestamp: 使用當前日期
+  watermark_enable_username: 使用當前用戶名
+  watermark_custom_text: 自定義水印文字
