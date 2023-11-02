@@ -37,10 +37,18 @@ module Watermark
               var watermark#{i+1} = '#{tmp_arr[i]}';
               const finalContent#{i+1} = decodeURIComponent(generateWatermark(watermark#{i+1}));
               $('.watermark#{i+1}').css('background-image', `url(\"data:image/svg+xml;charset=utf-8,${finalContent#{i+1}}\")`);
+              $('.watermark#{i+1}').css('height', $('#wrapper').height() + 'px');
             })
           "
         html << "\n</script>\n"
       end
+      html << "
+          <script type=\"text/javascript\">\n
+          $(window).resize(function() {
+            $('.watermark').css('height', $('#wrapper').height() + 'px');
+          });
+      "
+      html << "\n</script>\n"
       return html
     end
   end
