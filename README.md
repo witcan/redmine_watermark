@@ -4,7 +4,7 @@
 Add watermark to Redmine web page
 
 ## Compatible
-Redmine Watermark is compatible and tested with Redmine 6.0.x, 5.0.x, 4.2.x, 4.1.x, 4.0.x
+Redmine Watermark is compatible and tested with Redmine 7.0.x, 6.1.x, 6.0.x, 5.0.x, 4.2.x, 4.1.x, 4.0.x
 
 ## Installation
 1. Copy the plugin directory into the plugins directory
